@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Go with the wind</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icon.png') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Optimized route for cyclists. To amateurs from amateurs">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFdUG10fIlnCyW2mY01jhVPlpi_u4YSuc&callback=initMap"></script>
+        <script language="JavaScript" src="{{url_for('static', filename='script.js')}}"></script>
+    </head>
+    <body>
+        <div id="floating-panel">
+            <b>Start: </b>
+            <input type="text" id="start" value="1265 E University Dr">
+            <b>End: </b>
+            <input type="text" id="end" value="South Mill Avenue Tempe AZ">
+            <button id="directionsButton">Get Directions</button>
+        </div>
+        <div id="map"></div>
+    </body>
+</html>
